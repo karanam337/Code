@@ -1,0 +1,37 @@
+Map Reduce Assignment        DUE DATE: 10/13/2020 by 11:59 p.m.
+
+Preparation:
+
+Launch your VM.
+Unzip the file called Shakespeare.tar.gz – you should have done this in your HDFS hands-on exercise.
+Copy the shakespeare directory to HDFS – verify that it is there.
+The contents of the /user/training/shakespeare HDFS directory should contain the files comedies, glossary, histories, poems, and tragedies.
+Requirements: Use the shakespeare directory in HDFS to do the following:
+
+Write a map-reduce program that creates an inverted list of words beginning with a vowel (i.e., a, e, i, o, u) and of length greater than 6 and the files that contain them. That is, for each word, you will display a list of files that contain that word (remember it should be of length > 6 and begin with a vowel). File names should be unique (i.e., no duplicate file names are allowed). A sample output format is given below:
+‘anger’             [‘histories’, ‘tragedies’]
+
+‘laugh’             [‘comedies’, ‘poems’, ‘histories’]
+
+…….
+
+ 
+
+NOTE: my sample output does not conform to my requirement – your words should start with a vowel and have a length > 6.
+
+ 
+
+Modify your map-reduce program (in 1) to display the number of times the word occurs in each file. A sample output is shown below:
+‘anger’             {‘histories’: 3, ‘tragedies’: 8}
+
+‘laugh’             {‘comedies’: 7, ‘poems’: 2, ‘histories’: 15}
+
+………
+
+Normalize text (i.e., convert to lowercase) and remove stopwords before you run your analysis.
+
+In order to determine the file from which a line is being streamed, you could use the following command:
+
+filename = os.getenv(‘map_input_file’)
+
+Note that the filename will include the complete path (e.g., hdfs://user/training/shakespeare/comedies). You will have to extract just filename (‘comedies’ in this example).
