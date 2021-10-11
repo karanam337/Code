@@ -1,0 +1,24 @@
+opulence,great wealth
+penury,extremely poor
+gregarious,fond of company; sociable
+entomology,study of insects
+
+opulence1,great wealth
+penury1,extremely poor
+gregarious1,fond of company; sociable
+entomology1,study of insects
+
+opulence2,great wealth
+penury2,extremely poor
+gregarious2,fond of company; sociable
+entomology2,study of insects
+
+opulence3,great wealth
+penury3,extremely poor
+gregarious3,fond of company; sociable
+entomology3,study of insects
+
+opulence4,great wealth
+penury4,extremely poor
+gregarious4,fond of company; sociable
+entomology4,study of insects
